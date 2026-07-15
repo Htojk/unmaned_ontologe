@@ -30,7 +30,7 @@
 
 | 编号 | 原子交付物 | 前置项 | 允许修改路径 | 必须验证 | 状态 | 提交/证据 |
 | --- | --- | --- | --- | --- | --- | --- |
-| P00 | 架构、开发准则和原子计划基线 | 无 | `AGENTS.md`、`docs/*.md` | 文档存在；链接和围栏检查；`git diff --check`；GitHub推送 | 已完成 | 基线`791cc3f`、过程记录`779eb7a`均已推送；`HEAD=origin/main=779eb7a` |
+| P00 | 架构、开发准则和原子计划基线 | 无 | `AGENTS.md`、`docs/*.md` | 文档存在；链接和围栏检查；`git diff --check`；GitHub推送 | 已完成 | 基线`791cc3f`、过程记录`779eb7a`和完成回写`bb9ec19`均已推送 |
 | P01-D | 运行环境骨架详细设计 | P00 | `docs/design/P01-runtime-skeleton.md`、计划表 | 设计反思和检查清单通过 | 待开始 | — |
 | P01-I | Docker Compose及服务健康检查骨架 | P01-D | `compose.yaml`、`.env.example`、各服务最小启动文件、测试 | 一键启动；frontend/backend/fuseki/tika健康检查全部通过 | 待开始 | — |
 | P02-D | 巡检领域本体与SHACL详细设计 | P01-I | `docs/design/P02-ontology-baseline.md`、计划表 | 概念、关系、IRI、约束、推理和测试设计检查通过 | 待开始 | — |
